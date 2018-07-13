@@ -1,18 +1,9 @@
-//Array To Store Data of Student...
-var Studentinfo=[id=1,"Muhammad Fazeel",Address="IIUI Hostels",Email="Fazeel.bsse2894@iiu.edu.pk"
-,Class="BS Software Engineering"]
-//Function to Display Data Stored in Array...
-Studentinfo.map(function(Values)
+//Create An Array
+var Main=[];
+function AddRecord(Id,Name,Address,Email,Class)
 {
-console.log(Values);    
-});
-//Update Record...
-//Add new Element...
-Studentinfo.push(phone="03425495747");
-console.log(Studentinfo);
-//To Add Element at the beginning... 
-Studentinfo.unshift(Status="New User");
-console.log(Studentinfo);
-//Insert Elements in the Middle of an Array...
-Studentinfo.splice(3,0,Faculty="FBAS")
-console.log(Studentinfo);
+    var Add =[Id,Name,Address,Email,Class];
+    Main.push(Add);
+}
+AddRecord("1","Fazeel","AJ&K","p.pakistan47@gmail.com","BS(SE)");
+console.log(Main);
