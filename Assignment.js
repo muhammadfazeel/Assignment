@@ -13,6 +13,7 @@ Main.map(function(Value)
 if(Value[0]===Id)
 {
     delete Main[0];
+    console.log("Record Deleted Successfully");
 }
 });
 }
